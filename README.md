@@ -1,4 +1,4 @@
-###From “Mumu” To Master: Command Line And Version ControlIn Minutes###
+### From “Mumu” To Master: Command Line And Version ControlIn Minutes ###
 
 ***BY OGUNDIRAN AYOBAMI***
 
@@ -27,11 +27,11 @@ Did you say: show me the answer if it is possible?
 
 Don’t worry! I will show you how to do it along the line. Just keep reading.
 
-Download Git Or Use CMD
+### Download Git Or Use CMD ###
 
 The first thing you have to do is downloading git here ; then install it and get a bottle of ZOBO to calm your nerves. While installing git, make sure you select features that are suitable for your project. If you have any issue installing it to support your project, add me on Facebook @ www.facebook.com/ayobami.ogundiran or ask other people you know. 
 
-###Understanding $PATH###
+### Understanding $PATH ###
 
 After you have installed git, it is time to do something meaningful and magical. Let’s starts with understanding $PATH. When you have a $PATH like   /c/users/your-username/ Desktop/ react/ Ab.js  or  /c/users/your-username/Download/react/Ab.js , do you know what it means? Don’t rack you brain, check below.
 
@@ -40,10 +40,7 @@ The path above shows that your Ab.js file is inside REACT folder which is on the
 
 Wait a second! Let’s talk about command, flag and argument for you to understand how they are used better.
 
-
-
-
-###Understanding Command, Flag and Argument###
+### Understanding Command, Flag and Argument ###
 
 ***Let’s look at this:  rm  -rf  filename***
 
@@ -52,94 +49,98 @@ rm is a command or utility ; -rf is a flag and  filename.txt is an argument to t
 What does the command syntax above do? Don’t worry, we will get to that soon.
 
  
-###Let’s start with START###
+### Let’s start with START ###
 
 
 Start is a command that is used to launch applications or execute computer files. For example, your Mozilla Firefox browser will be launched if you run start firefox in you git console. All you have to do now is to open up you git console play with start command to come up with several ways to use it.
 
 
-###cd###
+### cd ###
 
 Cd simply means CHANGE DIRECTORY. It is used to traverse directories, this is, it handles opening of folders. If you are currently at the root directory but you want to do something on the desktop page; you can run cd $PATH ( e.g cd /c/users/User/Desktop ). By running that command, you should be in your desktop folder. Let’s say you want to create a folder in your desktop page after navigating to the page. Then you can use mkdir. 
 
 
-###mkdir###
+### mkdir ###
 
 To create a directory, just run this command: mkdir DIRNAME in your command line console. It will create a folder with the name you specified. E.g. mkdir Class. Oh! The file you created is not needed, you have to delete. It is time to run: rmdir DIRNAME.
 
-###rmdir###
+### rmdir ###
 
 rmdir is simply used to remove directory(s). In case you feel a directory is unnecessary and you want to remove it; just use rmdir in your git to delete it. E.g. rmdir Class.
 
-###cp###
+### cp ###
 
 cp simply means copy and it is used to copy a file or folder to another folder. Be reminded that copy is the equivalent of cp while using windows cmd. To use this, you need to run cp $FILL-TO-COPY  $FOLDER-TO-COPY-TO. E.g. cp myfile.txt Class. The foregoing will copy the file named myfile.txt to the folder named Class provided that they are in the same folder. Make sure you specify correct paths
 
 
-###touch###
+### touch ###
 
 touch is used to create new file. To use ‘touch’, just run touch $NEW-FILE-NAME. E.g, touch mumu.js. What if you want to create multiple files will just a code? Don’t worry! Keep reading. 
 
-###rm###
+### rm ###
 
 Sometimes, there may be a file you want to delete for a genuine reason; in such case, you can use rm to remove the file with ease. This is how to use it: rm $FILENAME.ANYTHING – e.g. rm new-file.txt.
 
-###pwd###
+### pwd ###
 
 In some occasions, you may not know the directory you are currently working inside of; then you may want to find out and all you need to use in git or cmd is pwd which means present working directory. To use this, just run: pwd in terminal or cmd and it will show you the path to the folder you are currently working inside of.
 
 
-###..###
+### .. ###
 
 These two dots mean parent directory. If I run cd /c/users/Ayobami/desktop, my directory will be changed to my desktop page or folder, but what I actually want to work on is in Ayobami folder; then I have to go back to Ayobami. Considering the diagrammatic explanation provided previously in this book, Ayobami folder is the parent of desktop. In this case, I want to go back to the parent directory which is Ayobami folder, so I need to run cd .. which means go back to the parent directory. Thus, .. means parent directory.
 
-###.###
+### . ###
 
 This “.” simply means current directory. May be you have many folders inside Ayobami folder but you want to run a command to work in the same folder; then, you can use . to show that the command should start from the current folder. So, “. “  means current directory.
 
-###-###
+### - ###
 
 The symbol above is an hyphen and it is used in command line to mean previous directory. When you have changed one directory to another, sometimes, you may need to go back to the previous folder; just run: cd – .
 
-###Ls###
+### Ls ###
 
 In some instances, you will need to check files that are present in a directory to know what to choose or open for use. Then, ls can be of importance. Ls means “list contents”, so when you use it; the contents of the present working directory will be listed. E.g. ls .
 
-###Less###
+### Less ###
 
 Any time there is a need to open are file git or cmd, less command becomes useful. If a file has been created and it is time to open it; just run: less $filename.txt. Be informed that the file will be opened in the same command line console, which may not be want you want, then what will you do to open it in an application of your choice like notepad, Microsoft word or excel, etc.? In this case, we need to make use of start as used below:
 start file.txt.
 
-###* ( Wildcat )###
+### * ( Wildcat ) ###
   
 ¬You do call the above symbol asterisk in general use but it is called wildcat in command line term. What does it do? It means “all or anything” whenever it is used. For instance, the command below means that all files that end with .txt be deleted:
-rm  *.txt
+```rm  *.txt
+```
 
 Note: Check below for more applications.
 
-###Find###
+### Find ###
 
 Find is used, as its name suggests, to locate files. You can use it to search any files on your system. E.g. find image.jpg
 
-###Rename / ren###
+### Rename / ren ###
 
 Any time you want to rename a file or multiple files, rename command becomes useful. It is run like: rename OLD-NAME  NEWNAME
 
-###shutdown###
+### shutdown ###
 
 This is a command that can be used to shutdown your computer from the command line console. It very useful since it makes it easier for you to time your computer and even shutdown itself when you are not around. It can be run as in below:
+
+```
 Shutdown –s   (shutdown only)
 Shutdown –r  (shutdown but restart)
 Shutdown –l (logoff)  etc.
+```
 
-###Help###
+### Help ###
 
 Help is an important command that enable us to get more information about how other commands are used. To get information about many commands in command console, just run help 
  
 We may choose to find out further information about one of the commands shown in the console, so we can just run help CommandName. E.g. help shutdown
  
 
-###Using Bash Shortcut Keys###
+### Using Bash Shortcut Keys ###
 
 There are a number of very useful shortcut keys you can use in the bash shell, and it pays to master them all. Here's a couple to get you started:
 •	Ctrl + U: To clear the line from the cursor point back to the beginning, press ctrl + u.
@@ -149,7 +150,7 @@ There are a number of very useful shortcut keys you can use in the bash shell, a
 
 Note: This may not work on windows if you don’t have git-bash installed.
 
-###History###
+### History ###
 
 History will show all you have done your computer previously.
 Using Vim Editor
@@ -160,7 +161,7 @@ vi file.txt – this will open you file.txt in vim editor
 
 Press i to insert or edit your file. After editing the file, but there is no need to save it just press esc key and type :q! (to quit it without warning) or :q (with warning); in case there is a need to save it, just run :wq (write to disk and quit).
 
-###More Applications:###
+### More Applications: ###
 
 This section shows how to think and use command line to make life easy for you.
 1. Answer to the question asked at the beginning of this book:
@@ -187,7 +188,7 @@ rm foldername ; this will give below error message
  In order to force the command to delete the file, just run rm –rf foldername.
 Hey! What is the meaning of –rf? Expect what it does later in this material.
 
-###Multiple actions###
+### Multiple actions ###
 
 Hey! Welcome back to this part of the tutorial. I promised to show you how to use pipe |, start, touch and and (&&) for multiple actions.
 Let start with touch, if you want to create multiple files at once, touch will be handy. I always use touch to create multiple files after I have planned the structure of my application on paper. 
@@ -202,24 +203,24 @@ Let start with touch, if you want to create multiple files at once, touch will b
 
 5.	To delete multiple folders, run rmdir first_dir second_dir third_dir. I also promised to explain the use of rm  –rf  foldername. Just keep reading. I will discuss it later in this material. Yay!
 
-###Pipe |###
+### Pipe | ###
 
 You should have known the usage of pipe | from my explanation while discussing start. Anyway, let me repeat my explanation. Pipe | is used to pass many arguments to a function. E.g start firefox | opera | notepad. You should have noticed that touch, rm , mkdir, and rmdir don’t use pipe to act on multiple files, folders or applications; that means such commands take multiple arguments natively, but you will come across some command that only take an argument; that is when pipe is handy. That is, you will use pipe to pass an argument to such command one after the other. Start is an example of commands that take an argument. That is why we always use pipe to pass many arguments to it consecutively.
 
-###&&###
+### && ###
 
 && is used to join multiple actions to be carried out together. For example, you can create a new folder and delete its old version at the same time. E.g, run mkdir School && rmdir Class && cd School && touch students.js.  Did you know the meaning of the above string of commands? It creates a folder called School in the present working directory; it deletes Class folder, opens School folder and inserts a file named students.js into it. It makes running multiple actions with a string of commands at once possible. That is very handy if you have already planned you application structure.
 
-###Alias###
+### Alias ###
 
 My full name is Ogundiran Ayobami Akeem; Oh! That is f**king long. You won’t always want to call that f**king long full name all the time. Yeah! That is why most people call me ‘Ay’. That is short and easy to write. While using command line, you would need to write long commands repetitively. In this case, alias would save you a lot of typing. Below image shows some of the aliases I used in some of my related applications.
 
-###How do we create and use alias?###
+### How do we create and use alias? ###
 
 It is not rocket science! Just run vim ~/.bash_profile or any name you prefer. Or navigate to localdisc(C:)/Users/your-username. In your username folder, create a file and save it with .bash_profile. You can then open it in any text editor to add or remove aliases. But if you go with Vim, it will open a new file, in your console, wherein you will put your aliases. In the file, just write your aliases. It is always in this format: alias Name= ‘A string of command(s)’. For instance, alias myapp=”cd  /c/wamp/www/myapp”.
 To use the alias, run source ~/.bash_profile in your console; then use your alias as in: myapp. Yeah! That is cool. That is it for alias. 
 
-###> and  >> (Redirection)###
+### > and  >> (Redirection) ###
 
 > is a redirection flag that is used to pass a result of such action into another file.
 If you have used heroku to host laravel, you may get what > does.  E.g, echo web: vendor/bin/heroku-php-apache2  public/ > Procfile. This string of command create a file calls Procfile and insert web: vendor/bin/heroku-php-apache2 public / into into it. That is how > is used. You should be aware that if Procfile exists before running the above command, Procfile with will be overridden. What if you don’t want to override the Procfile but you want to append another result or information to it; how will you do it?
@@ -232,7 +233,7 @@ Lest I forget, rm –rf foldername is used to forcefully remove a folder when it
 
 Note: don’t use rm –rf foldername except you know what you are doing. And don’t ever try it with * if you don’t understand what it does because you may end up destroying all the soft wares on your computer. Be warned! Be careful.
 
-###Version Control (Git & GitHub)###
+### Version Control (Git & GitHub) ###
 
 As a developer, you would need to collaborate, contribute or work remotely; then you will need to use Version Control. Stop! Version control is more than that, but such simple description gives a proper insight about it. It enhances tracking, storage and maintenance of software source code. Who cares?
 
@@ -248,21 +249,27 @@ Makes sure you download git HERE. Then you need to set up git for use. To set up
 
 Let’s create a root directory for your hello world application.
 
+```
 mkdir hello-world-app . 
+```
 
 Then change your directory to the hello-world-app. 
 
+```
 cd hello-world-app
+```
 
 Yeah! Let’s get started by running: git init. Then, you will follow the messages prompted by the command you run. It will ask you some questions (JAMB QUESTIONS – Nigerian slang, meaning too basic questions), answer them as you like. Wait! What if I make some mistakes while answering the questions; can I still correct them? Yes, the git init will create a package.json for you and you can edit the answers you supply in the package.json file. 
 
 It is good to explain one or two things to people that might see your hello-world-app. We will include that in our README file. It is time to create README inside the hello-world-app.
 
+```
 touch README.md
+```
 
 Now is the time to prepare our application to go github. But before then, you need to know some basic stuff.
 
-###Workflow###
+### Workflow ###
 
 The local repository we work with is made up of three components or “trees” all maintained by git. The first one is the Working Directory which contains the actual files. The second one is the Index which acts as a staging area and finally the HEAD which points to the last commit you've made.
 add
