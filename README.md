@@ -10,6 +10,7 @@ This material is dedicated to Nigerian community of software developers for thei
 This material is not properly proofread, so you may come across some errors. Thanks for understanding. You can help us make it better.
 
 Command Line and Version Control make life easier for developers for so many reasons which you will understand better by the time you start using them in your projects. It goes without saying that it is more than necessary to learn using Command Line and Version Control as a developer to make life easier for yourself
+
 •	It can easily be automated.
 •	It provides a simple access to options.
 •	It is expert-friendly.
@@ -18,7 +19,11 @@ Command Line and Version Control make life easier for developers for so many rea
 
 	For you to know the practical reason for using these things, answer the question below:
 
-•	You are currently in your office and it is 1:50pm; just at the moment a company calls you to come and close a N20 billion contract which you have to start its processing by exactly 2:00pm and ends it by 3:00pm without stopping. That same day, your partner is also coming from Lagos to your office to collect a file from you to close an important contract but he will get to your office by 2:20pm. Coping or sending (on internet) that file will take 15 minutes but you can only spend 2 more minute in your office; yet you can’t ask anybody to help you copy it because you have confidential documents on your laptop. You can only ask your secretary to give the flash that contains the copied files to your partner but your computer must be shutdown by the time she gets there to take the flash. 
+•	You are currently in your office and it is 1:50pm; just at the moment a company calls you to come and close a N20 billion contract which you have to start its processing by exactly 2:00pm and ends it by 3:00pm without stopping.
+
+ That same day, your partner is also coming from Lagos to your office to collect a file from you to close an important contract but he will get to your office by 2:20pm. Coping or sending (on internet) that file will take 15 minutes but you can only spend 2 more minute in your office; yet you can’t ask anybody to help you copy it because you have confidential documents on your laptop.
+
+ You can only ask your secretary to give the flash that contains the copied files to your partner but your computer must be shutdown by the time she gets there to take the flash. 
 
 How will you do it?	
 
@@ -29,7 +34,9 @@ Don’t worry! I will show you how to do it along the line. Just keep reading.
 
 ### Download Git Or Use CMD ###
 
-The first thing you have to do is downloading git here ; then install it and get a bottle of ZOBO to calm your nerves. While installing git, make sure you select features that are suitable for your project. If you have any issue installing it to support your project, add me on Facebook @ www.facebook.com/ayobami.ogundiran or ask other people you know. 
+The first thing you have to do is downloading git here ; then install it and get a bottle of ZOBO to calm your nerves. While installing git, make sure you select features that are suitable for your project. 
+
+If you have any issue installing it to support your project, add me on Facebook @ www.facebook.com/ayobami.ogundiran or ask other people you know. 
 
 ### Understanding $PATH ###
 
@@ -44,7 +51,9 @@ Wait a second! Let’s talk about command, flag and argument for you to understa
 
 ***Let’s look at this:  rm  -rf  filename***
 
-rm is a command or utility ; -rf is a flag and  filename.txt is an argument to the command. Flag can sometimes be indicated with two dashes (--) or a dash (-).  Command is the instruction to be carried out; flag is used to give options or preferences to command’s execution. And argument is the object the command or instruction operates on.
+rm is a command or utility ; -rf is a flag and  filename.txt is an argument to the command. Flag can sometimes be indicated with two dashes (--) or a dash (-).
+
+Command is the instruction to be carried out; flag is used to give options or preferences to command’s execution. And argument is the object the command or instruction operates on.
 
 What does the command syntax above do? Don’t worry, we will get to that soon.
 
@@ -52,12 +61,20 @@ What does the command syntax above do? Don’t worry, we will get to that soon.
 ### Let’s start with START ###
 
 
-Start is a command that is used to launch applications or execute computer files. For example, your Mozilla Firefox browser will be launched if you run start firefox in you git console. All you have to do now is to open up you git console play with start command to come up with several ways to use it.
+Start is a command that is used to launch applications or execute computer files. For example, your Mozilla Firefox browser will be launched if you run start firefox in you git console.
+
+All you have to do now is to open up you git console play with start command to come up with several ways to use it.
 
 
 ### cd ###
 
-Cd simply means CHANGE DIRECTORY. It is used to traverse directories, this is, it handles opening of folders. If you are currently at the root directory but you want to do something on the desktop page; you can run cd $PATH ( e.g cd /c/users/User/Desktop ). By running that command, you should be in your desktop folder. Let’s say you want to create a folder in your desktop page after navigating to the page. Then you can use mkdir. 
+Cd simply means CHANGE DIRECTORY. It is used to traverse directories, this is, it handles opening of folders. If you are currently at the root directory but you want to do something on the desktop page; you can run 
+
+```
+cd $PATH ( e.g cd /c/users/User/Desktop )
+```
+
+. By running that command, you should be in your desktop folder. Let’s say you want to create a folder in your desktop page after navigating to the page. Then you can use mkdir. 
 
 
 ### mkdir ###
@@ -70,7 +87,12 @@ rmdir is simply used to remove directory(s). In case you feel a directory is unn
 
 ### cp ###
 
-cp simply means copy and it is used to copy a file or folder to another folder. Be reminded that copy is the equivalent of cp while using windows cmd. To use this, you need to run cp $FILL-TO-COPY  $FOLDER-TO-COPY-TO. E.g. cp myfile.txt Class. The foregoing will copy the file named myfile.txt to the folder named Class provided that they are in the same folder. Make sure you specify correct paths
+cp simply means copy and it is used to copy a file or folder to another folder. Be reminded that copy is the equivalent of cp while using windows cmd. To use this, you need to run 
+```
+cp $FILL-TO-COPY  $FOLDER-TO-COPY-TO
+```
+
+. E.g. cp myfile.txt Class. The foregoing will copy the file named myfile.txt to the folder named Class provided that they are in the same folder. Make sure you specify correct paths
 
 
 ### touch ###
@@ -88,7 +110,9 @@ In some occasions, you may not know the directory you are currently working insi
 
 ### .. ###
 
-These two dots mean parent directory. If I run cd /c/users/Ayobami/desktop, my directory will be changed to my desktop page or folder, but what I actually want to work on is in Ayobami folder; then I have to go back to Ayobami. Considering the diagrammatic explanation provided previously in this book, Ayobami folder is the parent of desktop. In this case, I want to go back to the parent directory which is Ayobami folder, so I need to run cd .. which means go back to the parent directory. Thus, .. means parent directory.
+These two dots mean parent directory. If I run cd /c/users/Ayobami/desktop, my directory will be changed to my desktop page or folder, but what I actually want to work on is in Ayobami folder; then I have to go back to Ayobami. Considering the diagrammatic explanation provided previously in this book, Ayobami folder is the parent of desktop.
+
+In this case, I want to go back to the parent directory which is Ayobami folder, so I need to run cd .. which means go back to the parent directory. Thus, .. means parent directory.
 
 ### . ###
 
@@ -104,7 +128,9 @@ In some instances, you will need to check files that are present in a directory 
 
 ### Less ###
 
-Any time there is a need to open are file git or cmd, less command becomes useful. If a file has been created and it is time to open it; just run: less $filename.txt. Be informed that the file will be opened in the same command line console, which may not be want you want, then what will you do to open it in an application of your choice like notepad, Microsoft word or excel, etc.? In this case, we need to make use of start as used below:
+Any time there is a need to open are file git or cmd, less command becomes useful. If a file has been created and it is time to open it; just run: less $filename.txt. 
+
+Be informed that the file will be opened in the same command line console, which may not be want you want, then what will you do to open it in an application of your choice like notepad, Microsoft word or excel, etc.? In this case, we need to make use of start as used below:
 start file.txt.
 
 ### * ( Wildcat ) ###
@@ -156,7 +182,10 @@ History will show all you have done your computer previously.
 Using Vim Editor
 
 If you have vim installed on your computer, you can easily edit your files in vim editor as shown below:
-vi file.txt – this will open you file.txt in vim editor 
+```
+vim file.txt
+```
+ – this will open you file.txt in vim editor 
  
 
 Press i to insert or edit your file. After editing the file, but there is no need to save it just press esc key and type :q! (to quit it without warning) or :q (with warning); in case there is a need to save it, just run :wq (write to disk and quit).
@@ -165,19 +194,34 @@ Press i to insert or edit your file. After editing the file, but there is no nee
 
 This section shows how to think and use command line to make life easy for you.
 1. Answer to the question asked at the beginning of this book:
+
+```
 cp /c/users/ayobami/desktop/file.txt  D:/  && shutdown -s -t72000 
+```
+
 This will copy the file named file.txt to D: / (flash) and the computer will shutdown in 20minutes. You may remove –t7200 if you don’t want to set time.
-Note: If you drag the file and directory to the cmd, it may not work in git-bash. To correct the cause, just change \(backward slash) to /(forward slash) wherever you find it in the path in command line console.
+Note: If you drag the file and directory to the cmd, it may not work in git-bash.
+
+To correct the cause, just change \(backward slash) to /(forward slash) wherever you find it in the path in command line console.
+
 
 2. Sometimes, you may need to run multiple commands once. For example, you want to create a file and open it in notepad.
 Ans: touch file.txt | start file.txt
 This “|” is called pipe; we will talk more about it in this material later.
 
 3. You may need to open many application at the same time or once, then command line becomes useful.
-Ans: 
+Ans:
+
+```
 start C:\Users\s\Desktop\IMG_20170705_135937.jpg | start C:\Users\s\Desktop\php_objects_patterns_and_practice_3rd_edition.pdf | start C:\Users\s\Desktop\Timing.txt | start C:\Users\s\Desktop\web
+```
+
 or 
+
+```
 start C:/Users/s/Desktop/img.jpg  && C:/Users/s/Desktop/img2.jpg && start C:/Users/s/Desktop/img2.jpg
+```
+
 Note: I didn’t write above paths, I dragged each of them to the console. You may need to change \ to / if it doesn’t work in your console.
 With the above commands, I start three things once – an image , a book and a folder. 
 But, don’t you think it is not necessary to repeat start and “&&”. Then, how can we do it? Watch out for that in volume ii.
@@ -205,31 +249,55 @@ Let start with touch, if you want to create multiple files at once, touch will b
 
 ### Pipe | ###
 
-You should have known the usage of pipe | from my explanation while discussing start. Anyway, let me repeat my explanation. Pipe | is used to pass many arguments to a function. E.g start firefox | opera | notepad. You should have noticed that touch, rm , mkdir, and rmdir don’t use pipe to act on multiple files, folders or applications; that means such commands take multiple arguments natively, but you will come across some command that only take an argument; that is when pipe is handy. That is, you will use pipe to pass an argument to such command one after the other. Start is an example of commands that take an argument. That is why we always use pipe to pass many arguments to it consecutively.
+You should have known the usage of pipe | from my explanation while discussing start. Anyway, let me repeat my explanation. Pipe | is used to pass many arguments to a function. E.g start firefox | opera | notepad. 
+
+You should have noticed that touch, rm , mkdir, and rmdir don’t use pipe to act on multiple files, folders or applications; that means such commands take multiple arguments natively, but you will come across some command that only take an argument; that is when pipe is handy. 
+
+That is, you will use pipe to pass an argument to such command one after the other. Start is an example of commands that take an argument. That is why we always use pipe to pass many arguments to it consecutively.
 
 ### && ###
 
-&& is used to join multiple actions to be carried out together. For example, you can create a new folder and delete its old version at the same time. E.g, run mkdir School && rmdir Class && cd School && touch students.js.  Did you know the meaning of the above string of commands? It creates a folder called School in the present working directory; it deletes Class folder, opens School folder and inserts a file named students.js into it. It makes running multiple actions with a string of commands at once possible. That is very handy if you have already planned you application structure.
+&& is used to join multiple actions to be carried out together. For example, you can create a new folder and delete its old version at the same time. E.g, run mkdir School && rmdir Class && cd School && touch students.js.  Did you know the meaning of the above string of commands? 
+
+It creates a folder called School in the present working directory; it deletes Class folder, opens School folder and inserts a file named students.js into it. It makes running multiple actions with a string of commands at once possible. That is very handy if you have already planned you application structure.
 
 ### Alias ###
 
-My full name is Ogundiran Ayobami Akeem; Oh! That is f**king long. You won’t always want to call that f**king long full name all the time. Yeah! That is why most people call me ‘Ay’. That is short and easy to write. While using command line, you would need to write long commands repetitively. In this case, alias would save you a lot of typing. Below image shows some of the aliases I used in some of my related applications.
+My full name is Ogundiran Ayobami Akeem; Oh! That is f**king long. You won’t always want to call that f**king long full name all the time. Yeah! That is why most people call me ‘Ay’. That is short and easy to write. 
+
+While using command line, you would need to write long commands repetitively. In this case, alias would save you a lot of typing. Below image shows some of the aliases I used in some of my related applications.
 
 ### How do we create and use alias? ###
 
-It is not rocket science! Just run vim ~/.bash_profile or any name you prefer. Or navigate to localdisc(C:)/Users/your-username. In your username folder, create a file and save it with .bash_profile. You can then open it in any text editor to add or remove aliases. But if you go with Vim, it will open a new file, in your console, wherein you will put your aliases. In the file, just write your aliases. It is always in this format: alias Name= ‘A string of command(s)’. For instance, alias myapp=”cd  /c/wamp/www/myapp”.
+It is not rocket science! Just run vim ~/.bash_profile or any name you prefer. Or navigate to localdisc(C:)/Users/your-username. In your username folder, create a file and save it with .bash_profile. 
+
+You can then open it in any text editor to add or remove aliases. But if you go with Vim, it will open a new file, in your console, wherein you will put your aliases. In the file, just write your aliases. It is always in this format: alias Name= ‘A string of command(s)’. 
+
+```
+For instance, alias myapp=”cd  /c/wamp/www/myapp”.
+
+```
 To use the alias, run source ~/.bash_profile in your console; then use your alias as in: myapp. Yeah! That is cool. That is it for alias. 
 
 ### > and  >> (Redirection) ###
 
 > is a redirection flag that is used to pass a result of such action into another file.
-If you have used heroku to host laravel, you may get what > does.  E.g, echo web: vendor/bin/heroku-php-apache2  public/ > Procfile. This string of command create a file calls Procfile and insert web: vendor/bin/heroku-php-apache2 public / into into it. That is how > is used. You should be aware that if Procfile exists before running the above command, Procfile with will be overridden. What if you don’t want to override the Procfile but you want to append another result or information to it; how will you do it?
+If you have used heroku to host laravel, you may get what > does.  
+
+```
+E.g, echo web: vendor/bin/heroku-php-apache2  public/ > Procfile. This string ```
+
+of command create a file calls Procfile and insert web: vendor/bin/heroku-php-apache2 public / into into it. That is how > is used.
+
+ You should be aware that if Procfile exists before running the above command, Procfile with will be overridden. What if you don’t want to override the Procfile but you want to append another result or information to it; how will you do it?
 
 This question takes us to the use of >>. It works just like > but it is different in the sense that it will not override the file if it exists; it will only add the result to the end of the file.
 
 To bring this part to an end, be informed that Google is your friend and it can help you get answers to things you may not know. It is not a crime if you don’t remember or know something, but it is bad not use all you know or remember practically. Use all the cool stuff you learn in this section before you continue.
 
-Lest I forget, rm –rf foldername is used to forcefully remove a folder when it is not empty. Normally, rmdir foldername can’t delete foldername if it is not empty to save you from losing important files. To confirm you know what you are doing, git makes it possible to forcefully remove such file recursively…. rm: remove –: flag identifier r: recursive f: force. 
+Lest I forget, rm –rf foldername is used to forcefully remove a folder when it is not empty. Normally, rmdir foldername can’t delete foldername if it is not empty to save you from losing important files. 
+
+To confirm you know what you are doing, git makes it possible to forcefully remove such file recursively…. rm: remove –: flag identifier r: recursive f: force. 
 
 Note: don’t use rm –rf foldername except you know what you are doing. And don’t ever try it with * if you don’t understand what it does because you may end up destroying all the soft wares on your computer. Be warned! Be careful.
 
@@ -276,47 +344,65 @@ add
 
  After you might have written some description in the README file, you would need to add(propose) it to the index area (staging area). So, we will use git add
 
+```
 git add <filename>:  git add README.md
+```
 
 What if you have worked on many files and you have to add/stage all of those files? It would be more labourious to stage or add them one after the other.  Then, you can use below command to add (propose) all files you have worked on once: 
 
+```
 git add *
+```
 
 Or
-
+```
 git add .
+```
 
 Once you have staged or added your files to the Index directory as a proposal; you need to accept the proposal. That is what committing your files does.
 To actually commit the changes in README file use
 
+```
 git commit -m "Commit message"
+```
 
 Now the file is committed to the HEAD, but not in your remote repository (on github or somewhere else) yet.
 
 Sometimes, you will need to know the files you have committed for some reasons. If that is the case, you need to run
+
+```
 git status
-Pushing changes
+```
+
+### Pushing changes ###
 You have done some things, yet you still need to do some more. The README changes have been committed to the HEAD in your local copy repository. From there, you will need to push it to the remote repository. So, execute
 git push origin master
 
 Opps! If you are pushing for the first time without configuring some stuff, you will bump into an error. Let’s configure our console to recognize you as a user .
-
+```
 git config --global user.name "Your Name Here"
+```
 
 Example:  git config --global user.name "Ayobami Ogundiran"
 
 You can put in any name you like. Thereafter, you'll need to input your email and that email must be the email you used when joining GitHub:
 
+```
 git config --global user.email “your_email@youremail.com”
+```
 
+```
 Example: git config --global user.email “myemail@yahoo.com”
+```
 
 The local repository has not been connected to any remote repository on a server and the repository is not cloned from an existing one. Therefore, git push remote master will not do what you want. Doing that means you want to push it to nowhere. Is that possible?
 
 ***Let’s connect it to a remote repository:***
 
+```
 git remote add origin <server>
 Example: git remote add origin https://www.github.com/codingnninja/hello-world-app.git
+```
 
 Now, execute push command:
 git push remote master
@@ -329,11 +415,15 @@ This stupid git will always ask you to enter your github credentials/password an
 
 Or you can command the console to cache it for you as in:
 
+```
 git config --global credentials.helper cache
+```
 
 But the console will only cache your credentials for just 15minutes by default. To set any timeout you prefer, execute
 
+```
 Git config --global credentials.helper ‘cache --timeout=5000’
+```
 
 It might be necessary to delete your credentials from the helper; then, use
 git credential-osxkeychain erase host=github.com protocol=https
@@ -341,85 +431,125 @@ Now you're all set to actually use git and GitHub!
 
 The issue surfaces because we use https protocol to connect to our repository. Otherwise, we would have set up SSH to avoid such issue. Anyway, you can learn that on your own because it is not within the scope of this tutorial.
 
-###git clone###
+### git clon e###
 
 Any time you want to copy a remote repository to you computer, execute
+```
 git clone <url> : git clone https:github.com/codingnninja/yeah.git
+```
 
-###Branching###
+### Branching ###
 
 “Branches are used to develop features isolated from each other. The master branch is the "default" branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion”. I can’t say it better.
 
 Create a new branch named "Dev" and switch to it using
+```
 git checkout -b Dev
+```
 To switch back to maste, execute git checkout master. If there is a need to delete the branch, you can run
+
+```
 git branch -d Dev
+```
 To make your branch available to others, you have to push it to the remote server as in:
+```
 git push origin <branch>
+````
 
 If you like to sync you local branch to it version in the remote server so that you can just do git push origin, execute
+```
 git push -u origin <branch> 
+```
 
-###Replace local changes###
+### Replace local changes ###
 
 In case you did something wrong, you can replace local changes using the command
 
+```
 git checkout -- <filename>
+```
 
 This command replaces the changes in your working tree with the last content in HEAD. Changes already added to the index, as well as new files, will be kept.
 
-###update & merge###
+### update & merge ###
 
 If you want to fetch and replace your local copy with the newest from the server because you think what you have on your computer has been messed up, run
 
+```
 git fetch origin
 git reset --hard origin/master
+```
 
 If you want to merge another branch into your active branch (e.g. master), use
+
+```
 git merge <branch>
+```
+
 Sometimes, merging will result in conflicts and you will need to correct the merge as you like and then run
+
+```
 git add <filename>
+```
 To indicate you have resolve the conflict to prepare it for merging. It is also good to preview branches you want to merge before merging them. You can use below command to preview them to check differences
+
+```
 git diff <source_branch> <target_branch>
+```
 Note: To carry out adding interactively run git add -i 
 
 To update your local repository to the newest commit, execute 
 
-###git pull###
+### git pull ###
 
 This command will fetch and merge remote changes to your local copy. It is the combination of both fetch and merge, and it is always used in most cases for many reasons.
 
-###Tagging###
+### Tagging ###
 
 You can create tag for releases of your software as in below:
+
+```
 git tag 1.0.0 1ce1b2e1d4
+```
 
 1.0.0 stands for the first release of you software and 1ce1b2e1d4 stands for commit id which can be got through git log.
 Logging
 Through log, you have access to the history of you commit. Just run
 
-###git log###
+### git log ###
 
 If several people work on the repository, you can get logs by other users by specifying their names.
+
+```
 git log --author=ayobami
+```
 
 ***See only which files have changed:***
 
+```
 git log --name-status. 
-
+```
 For more, see git log --help
 
-###How to contribute to an open source repository?###
+### How to contribute to an open source repository? ###
 
 Visit the repository you want to contribute to on github, click on fork button and a copy of the repository will be copied for you.
 After that, get the url of the forked repository created for you to clone it on your computer as in.
 
+```
 git clone https:github.com/codingnninja/to-contribute-repo.git
+```
 The next thing to do is to connect the original project in order to get update from there when available. So, execute
+
+```
 git remote add upstream https:github.com/originalDeveloper/original-repo.git
+```
 
 If you have committed any changes and you want to push to you remote repository, just run
+
+```
 git pull uptsream master && git push origin master
+```
 
 Note: the command above will fetch and merge update from the original project to your local copy and push your changes to the forked version you have in your account.
 
@@ -427,7 +557,7 @@ If you create another branch, you can push as in git push -u origin <branch>. Th
 
 Go back to github and look for compare and pull button or link and complete the process it takes you through. Then, you are through with your PR. Just be waiting for whether you PR would be accepted or rejected. Nice one!
 
-###.gitignore###
+### .gitignore ###
 
 Gitignore is always added to the root directory to ignore some files or folder while pushing to the server. Sometimes, some folders or files are not needed to be pushed to github. So, we use .gitignore file to command git to ignore them.
 
