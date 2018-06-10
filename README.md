@@ -285,7 +285,9 @@ To use the alias, run source ~/.bash_profile in your console; then use your alia
 If you have used heroku to host laravel, you may get what > does.  
 
 ```
-E.g, echo web: vendor/bin/heroku-php-apache2  public/ > Procfile. This string ```
+E.g, echo web: vendor/bin/heroku-php-apache2  public/ > Procfile. This string 
+
+```
 
 of command create a file calls Procfile and insert web: vendor/bin/heroku-php-apache2 public / into into it. That is how > is used.
 
@@ -317,9 +319,7 @@ Makes sure you download git HERE. Then you need to set up git for use. To set up
 
 Let’s create a root directory for your hello world application.
 
-```
-mkdir hello-world-app . 
-```
+``` mkdir hello-world-app . ```
 
 Then change your directory to the hello-world-app. 
 
@@ -344,20 +344,15 @@ add
 
  After you might have written some description in the README file, you would need to add(propose) it to the index area (staging area). So, we will use git add
 
-```
 git add <filename>:  git add README.md
-```
 
 What if you have worked on many files and you have to add/stage all of those files? It would be more labourious to stage or add them one after the other.  Then, you can use below command to add (propose) all files you have worked on once: 
 
-```
 git add *
-```
 
 Or
-```
+
 git add .
-```
 
 Once you have staged or added your files to the Index directory as a proposal; you need to accept the proposal. That is what committing your files does.
 To actually commit the changes in README file use
@@ -454,7 +449,7 @@ git branch -d Dev
 To make your branch available to others, you have to push it to the remote server as in:
 ```
 git push origin <branch>
-````
+```
 
 If you like to sync you local branch to it version in the remote server so that you can just do git push origin, execute
 ```
