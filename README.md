@@ -5,6 +5,8 @@
 
 This material is dedicated to Nigerian community of software developers for their resilience against all odds.
 
+[Join my YouTube channel here](https://m.youtube.com/channel/UC2PGsADIP0gGasA6Qent5Zw) or
+[Follow me on Twitter](www.twitter.com/codingnninja)
 
 
 This material is not properly proofread, so you may come across some errors. Thanks for understanding. You can help us make it better.
@@ -139,6 +141,10 @@ start file.txt.
 ```rm  *.txt
 ```
 
+[Join my YouTube channel here](https://m.youtube.com/channel/UC2PGsADIP0gGasA6Qent5Zw) or
+[Follow me on Twitter](www.twitter.com/codingnninja)
+
+
 Note: Check below for more applications.
 
 ### Find ###
@@ -221,6 +227,10 @@ or
 ```
 start C:/Users/s/Desktop/img.jpg  && C:/Users/s/Desktop/img2.jpg && start C:/Users/s/Desktop/img2.jpg
 ```
+
+[Join my YouTube channel here](https://m.youtube.com/channel/UC2PGsADIP0gGasA6Qent5Zw) or
+[Follow me on Twitter](www.twitter.com/codingnninja)
+
 
 Note: I didn’t write above paths, I dragged each of them to the console. You may need to change \ to / if it doesn’t work in your console.
 With the above commands, I start three things once – an image , a book and a folder. 
@@ -326,6 +336,10 @@ Then change your directory to the hello-world-app.
 ```
 cd hello-world-app
 ```
+
+[Join my YouTube channel here](https://m.youtube.com/channel/UC2PGsADIP0gGasA6Qent5Zw) or
+[Follow me on Twitter](www.twitter.com/codingnninja)
+
 
 Yeah! Let’s get started by running: git init. Then, you will follow the messages prompted by the command you run. It will ask you some questions (JAMB QUESTIONS – Nigerian slang, meaning too basic questions), answer them as you like. Wait! What if I make some mistakes while answering the questions; can I still correct them? Yes, the git init will create a package.json for you and you can edit the answers you supply in the package.json file. 
 
@@ -569,6 +583,12 @@ git rm –cached Filename
 
 The next time you push, git will not touch the private part of your application in public.  Wow! Thanks for reading all along. Power to your brain!
 
-Meet me once again in another material. My name remains Ogundiran Ayobami; I love writing and slapping my keyboard until great things happen. Thanks for your time. Follow me on twitter @ayovision. If you need a software developer for your project, message me on twitter or Facebook. Bye for now.
+Meet me once again in another material. My name remains Ogundiran Ayobami; I love writing and slapping my keyboard until great things happen. Thanks for your time. Follow me on twitter @codingnninja. If you need a software developer for your project, message me on twitter or Facebook. Bye for now.
+
+[Join my YouTube channel here](https://m.youtube.com/channel/UC2PGsADIP0gGasA6Qent5Zw) or
+[Follow me on Twitter](www.twitter.com/codingnninja)
+
+
+
 
 Official gitZobo page: [https://github.com/codingnninja/gitzobo.git/](https://github.com/codingnninja/gitzobo.git/)
